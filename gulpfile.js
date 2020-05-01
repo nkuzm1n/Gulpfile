@@ -13,7 +13,7 @@ const browserSync = require('browser-sync').create();
 
 const paths = {
 	// for Open server domain + ./dist
-	OpenServerDir: "/",
+	OpenServerDir: "test.ru",
 	srcDir: "./src/",
 	buildDir: "./dist/"
 };
@@ -134,7 +134,7 @@ gulp.task('watch', () => {
 	gulp.watch(styleFiles, gulp.series('styles'));
 	gulp.watch(jsFiles, gulp.series('scripts'));
 	gulp.watch(imagesFiles, gulp.series('images'));
-	gulp.watch(imagesFiles, gulp.series('fonts'));
+	gulp.watch(fontsFiles, gulp.series('fonts'));
 });
 
 // Gulp default task
